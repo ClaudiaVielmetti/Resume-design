@@ -93,6 +93,8 @@ h3{
   text-decoration: underline;
 }
 
+/*media queries are there to help the design fit to any screen
+min-width of 600px are set for the smaller screen such as phones*/
 @media screen and (min-width:600px) {
   body{
     background-color: red;
@@ -101,6 +103,12 @@ h3{
   
 }
 
+/*media queries are there to help the design fit to any screen
+min-width of 992px are set for the bigger screen such as desktops
+
+There is also a medium size that can be used - with a min width of 768px
+rem can also be used instead of px
+1 rem = 16px*/
 @media screen and (max-width:992px){
 body{
   background-color: hotpink;
