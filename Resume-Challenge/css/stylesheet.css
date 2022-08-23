@@ -1,3 +1,4 @@
+/* Basic layout for css in this project.*/
 *{
   box-sizing: border-box;
 }
@@ -23,6 +24,8 @@ body{
   margin-left: 1rem; 
 }
 
+/*Profile picture set to round as per requirements
+Colors set to compliment each other with the border around the picture*/
 #profilePic{
     display: inline-block; position: relative; 
     width: 100px; 
