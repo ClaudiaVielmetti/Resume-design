@@ -3,13 +3,15 @@
   box-sizing: border-box;
 }
 
-/*h1 header animation - typewriter intro for resume.
-using different speeds and keyframes*/
+/*The root is created for pre set variables used in the animation
+typewriter speed is used for how long it takes to complete
+and characters are used for the length of the word animated. */
 :root{
   --typewriterSpeed: 6s;
   --typewriterCharacters: 17;
 }
-
+/*h1 header animation - typewriter intro for resume.
+using different speeds and keyframes*/
 h1 {
   font-size: clamp(1rem, 3vw + 1rem, 4rem);
   position: relative;
@@ -38,11 +40,22 @@ h1::before {
 
 h1::after {
   width: 0.125rem;
-  background: black;
+  background: whitesmoke;
   animation: typewriter var(--typewriterSpeed)
       steps(var(--typewriterCharacters)) 1s forwards,
     blink 750ms steps(var(--typewriterCharacters)) infinite;
 }
+
+.quote {
+  color:whitesmoke;
+  font-size: 2rem;
+  font-weight: 400;
+  opacity: 0;
+  transform: translateY(3rem);
+  animation: fadeUp 2s ease calc(var(--typewriterSpeed)+8s)forwards;
+}
+
+
 
 @keyframes typewriter {
   to {
@@ -53,6 +66,13 @@ h1::after {
 @keyframes blink {
   to {
     background: transparent;
+  }
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
