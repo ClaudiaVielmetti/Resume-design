@@ -129,11 +129,12 @@ footer {
   color: charcoal;
 }
 
-
+/*social buttons are part of my contact list.
+i have aligned it to centre of the footer*/
 .rounded-social-buttons {
   text-align: center;
 }
-
+/*This is to specify the look of the buttons such as size and decoration*/
 .rounded-social-buttons .social-button {
   display: inline-block;
   position: relative;
@@ -153,13 +154,17 @@ footer {
   margin-right: 0.25rem;
   margin-bottom: 0.25rem;
 }
-
+/*This part is the animation - it rotates the buttons while they transform
+into different colors*/
 .rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
   -webkit-transform: rotate(360deg);
       -ms-transform: rotate(360deg);
           transform: rotate(360deg);
 }
 
+/*This is the individual styling of each button for Twitter, Facebook,
+Linkedin and email. The buttons are styled with size, color, background 
+color and border color to help the transformation in the animation.*/
 .rounded-social-buttons .fa-twitter, .fa-facebook-f, .fa-linkedin, .fa-envelope, .fa-instagram {
   font-size: 25px;
 }
@@ -213,6 +218,11 @@ footer {
   background: #fefefe;
   border-color: #125688;
 }
+/*This marks the end of the button styling. More buttons such as Github and
+Whatsapp can be added.*/
+
+
+
 
 #sidebar{
 background-color: #00B2CA;
