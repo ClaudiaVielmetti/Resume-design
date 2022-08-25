@@ -251,7 +251,7 @@ width:30%
 min-width of 600px are set for the smaller screen such as phones*/
 @media screen and (min-width:600px) {
   body{
-    background-color: red;
+    background-color: grey;
 
   }
   
@@ -265,6 +265,6 @@ rem can also be used instead of px
 1 rem = 16px*/
 @media screen and (max-width:992px){
 body{
-  background-color: hotpink;
+  background-color: white;
 }
 }
